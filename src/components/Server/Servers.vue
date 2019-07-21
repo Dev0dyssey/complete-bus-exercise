@@ -3,7 +3,8 @@
         <ul class="list-group">
             <app-server
                 v-for="server in servers"
-                :server="server"></app-server>
+                :server="server"
+                :key="server"></app-server>
         </ul>
     </div>
 </template>
@@ -12,7 +13,7 @@
     import Server from './Server.vue';
 
     export default {
-        data: function() {
+        data() {
             return {
               servers: [
                   { id: 1, status: 'Normal', name: 'Gaming'},

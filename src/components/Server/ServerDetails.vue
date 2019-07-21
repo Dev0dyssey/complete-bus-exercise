@@ -13,7 +13,7 @@
     import { serverBus } from '../../main';
 
     export default {
-        data: function() {
+        data() {
             return {
                 server: null
             }
